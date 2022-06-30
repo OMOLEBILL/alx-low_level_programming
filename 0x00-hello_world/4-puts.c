@@ -2,8 +2,9 @@
 
 
 /**
- * main - entry point
- * return: we always 0 (sucess)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
