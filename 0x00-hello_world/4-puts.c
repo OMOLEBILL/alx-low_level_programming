@@ -3,11 +3,11 @@
 
 /**
  * main - entry point
- * return (0) sucess
+ * return: we always 0 (sucess)
  */
 
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return(0);
+	return (0);
 }
