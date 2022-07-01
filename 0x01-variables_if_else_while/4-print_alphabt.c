@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
- * Description: Alphabet except some 
+ * Description: Alphabet except some
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-		char letter;
+		char alpha;
 
-		for (letter = 'a'; letter <= 'z'; letter++)
+		for (alpha = 'a'; alpha <= 'z'; alpha++)
 		{
-		if (letter != 'e' && letter != 'q')
-		putchar(letter);
+		if (alpha != 'e' && alpha != 'q')
+		putchar(alpha);
 		}
 		putchar('\n');
 
