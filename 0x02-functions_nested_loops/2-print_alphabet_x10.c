@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10(void) - Prints 10x aplhabetical nos
+ * print_alphabet_x10(void) - prints aphabets 10times
  *
  * Return: Void
  */
@@ -16,6 +16,6 @@ void print_alphabet_x10(void)
 			_putchar(a);
 		}
 		b++;
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
