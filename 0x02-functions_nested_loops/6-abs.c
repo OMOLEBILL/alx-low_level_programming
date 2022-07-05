@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * abs - give the absolute value of a number
+ * _abs - give the absolute value of a number
  *
  * @n: ASCII character
  *
