@@ -1,10 +1,10 @@
-#include "alx.h"
+#include "holberton.h"
 
 /**
- * main - Print the word "_putchar"
- *
- * Return: Always 0 (sucess)
- */
+* main - Print the word "Holberton"
+*
+* Return: Always 0 (Success)
+*/
 
 int main(void)
 {
@@ -12,10 +12,10 @@ int main(void)
 	char p[] = "Holberton";
 
 	for (i = 0; i < 9; i++)
-	{
+		{
 		_putchar(p[i]);
-	}
-	_putchar('\n');
+		}
+		_putchar('\n');
 	return (0);
 }
 
