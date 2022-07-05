@@ -7,7 +7,7 @@
  *
  * @b: ASCII charcter
  *
- * Returns: the sum
+ * Return: the sum
  */
 int add(int a, int b)
 {
