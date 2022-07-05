@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _isalpha - Check wether a number is alphabet
+ * _isalpha - Check wether a number is alphabet
  *
  * @c: ASCII character
  *
