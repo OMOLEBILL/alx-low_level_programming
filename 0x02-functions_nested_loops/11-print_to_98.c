@@ -8,21 +8,21 @@
 *
 * Return: void.
 */
-void print_to_98(int m)
+void print_to_98(int n)
 {
-	if (m > 98)
+	if (n > 98)
 	{
-	for (; m > 98; m--)
+	for (; n > 98; n--)
 		{
 		printf("%d, ", n);
 		}
 	}
-	else if (m < 98)
+	else if (n < 98)
 	{
-		for (; m < 98; m++)
+		for (; n < 98; n++)
 		{
-		printf("%d, ", m);
+		printf("%d, ", n);
 		}
 	}
-	printf("%d\n", m);
+	printf("%d\n", n);
 }
