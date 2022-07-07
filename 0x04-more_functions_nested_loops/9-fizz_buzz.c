@@ -1,26 +1,31 @@
 #include <stdio.h>
-
 /**
- * main - prints fizz/ buzz or fizzbuzz depending
- *
- * Return: Always 0 sucess
- */
+* main - entry block
+* @void: no argument
+* Return: 0 Success
+*/
 int main(void)
 {
-	 int a;
-	  
-	 for (a = 1; a <= 100; a++)
-	 {
-		 if (a % 3 == 0)
-		 {
-			 printf("%s ", "Fizz");
-		 }
-		 else if (a % 5 == 0)
-			 printf("%s ",  "Buzz");
-		 else if (a % 3 == 0 && a % 5 == 0)
-			 printf("%s ", "FizzBuzz");
-		 else
-			 printf("%d ",  a);
-	 }
+	int i;
+
+	for (i = 1; i < 100; i++)
+		if (i % 15 == 0)
+		{
+			printf("FizzBuzz ");
+		}
+		else if (i % 5 == 0)
+		{
+			printf("Buzz ");
+		}
+		else if (i % 3 == 0)
+		{
+			printf("Fizz ");
+		}
+		else
+		{
+			printf("%d ", i);
+		}
+	printf("Buzz");
+	printf("\n");
+	return (0);
 }
-			 
