@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * *_strcpy -  copies the string pointed to by src
+ * _strcpy -  copies the string pointed to by src
  * @dest: we evaluate this
- * @str: we print this
+ * @src: we print this
+ * Return: value of dest
  */
 char *_strcpy(char *dest, char *src)
 {
