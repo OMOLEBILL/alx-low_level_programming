@@ -1,18 +1,18 @@
 #include "main.h"
 #include <unistd.h>
 /**
- *_puts - prints a string, to stdout
- *@str: value to be evaluate.
- *Return: not.
+ *_puts - prints a string
+ *@str: the sring to be printed
+ *Return: void
  */
 void _puts(char *str)
 {
-	int l = 0;
+	int n = 0;
 
-	while (*(str + l) != '\0')
+	while (*(str + n) != '\0')
 	{
-		_putchar(str[l]);
-		l++;
+		_putchar(str[n]);
+		n++;
 	}
 	_putchar('\n');
 }
