@@ -4,7 +4,7 @@
  * print_rev - prints srings in reverse
  * @s: the string to be printed
  */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int a;
 
