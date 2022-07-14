@@ -1,35 +1,30 @@
 #include "main.h"
 
 /**
- * _strncat - and two strings of n
+ * _strncat - and two strings of n byte from
  * @dest: iput value
  * @src: input value
- * n : interger value
+ * @n : interger value
  * 
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int a;
-	int b;
+	int i;
+	int j;
 
-	a = 0;
-
-	while (dest[a] != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		a++;
+		i++;
 	}
-	b = 0;
-
-	while (b < n && src[b] != '\0')
+	j = 0;
+	while (j < n && src[j] != '\0')
 	{
-		dest[a] = src[b];
-		a++;
-		b++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	dest[a] = '\0';
-
+	dest[i] = '\0';
 	return (dest);
 }
-
-
