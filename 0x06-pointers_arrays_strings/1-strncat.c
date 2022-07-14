@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _strncat - and two strings of n byte from
- * @dest: iput value
+ * _strncat - adding two strings
+ * using at most n bytes from src
+ * @dest: input value
  * @src: input value
- * @n : interger value
- * 
+ * @n: input value
+ *
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
