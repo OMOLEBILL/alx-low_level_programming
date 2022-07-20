@@ -1,18 +1,5 @@
 #include "main.h"
 /**
- * _sqrt_recursion - square root of num
- * @n: num to be squareroot
- * Return: squareroot
- **/
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-		return (-1);
-	if (n == 0 || n == 1)
-		return (n);
-	return (sqtRecursive(2, n, n));
-}
-/**
  * sqtRecursive - computes square root recursively doing binary
  * @start: inital number
  * @end: last number within the limit of number
@@ -34,4 +21,18 @@ int sqtRecursive(int start, int end, int m)
 			return (sqtRecursive(mid + 1, end, m));
 	}
 	return (-1);
+}
+
+/**
+ * _sqrt_recursion - square root of num
+ * @n: num to be squareroot
+ * Return: squareroot
+ **/
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	if (n == 0 || n == 1)
+		return (n);
+	return (sqtRecursive(2, n, n));
 }
