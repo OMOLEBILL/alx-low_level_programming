@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts_recursion - prints out a string 
+ * _puts_recursion - prints out a string
  * @s: the pointer to the sring
  * Return: void
  **/
