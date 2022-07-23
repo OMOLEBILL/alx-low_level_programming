@@ -6,7 +6,7 @@
  * @argv: argument vector
  * Return: always 0 sucess
  **/
-int main (int argc; char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
