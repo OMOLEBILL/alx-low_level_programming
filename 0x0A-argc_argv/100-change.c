@@ -34,3 +34,4 @@ int main (int argc, char *argv[])
 	}
 	printf("%d\n", number);
 	return (0);
+}
