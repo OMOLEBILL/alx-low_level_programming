@@ -15,6 +15,10 @@ int main (int argc, char *argv[])
 		printf("Error\n");
 		return(0);
 	}
+	else if (argc < 1)
+	{
+		printf("%d\n", 0);
+	}
 
 	cents = atoi(argv[1]);
 
