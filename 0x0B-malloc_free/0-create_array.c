@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdlib.>
+#include <stdlib.h>
 /**
  * create_array - creates an array of characters
- * @size: size of the array
- * @c: the charcter making the array
- * Return: a apointerto the array
+ * @size: the size of the array
+ * @c: the character
+ * Return: a pointer to the array
  **/
 char *create_array(unsigned int size, char c)
 {
@@ -13,10 +13,13 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
+
 	p = malloc(sizeof(c) * size);
+
 	if (p == NULL)
-		return (NULL);
+		return(NULL);
 	for (i = 0; i < size; i++)
 		p[i] = c;
+
 	return (p);
 }
