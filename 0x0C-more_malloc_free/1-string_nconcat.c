@@ -1,15 +1,15 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * string_nconcat - conctatenates two string
+ * *string_nconcat - concatenates two strings
  * @s1: first string
- * @s2: second strings
+ * @s2: second string
  * @n: limit of s2
- * Return: pointer to the string
+ * Return: pointer to new space in memory or null
  **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *prt;
+	char *strDup;
 	int i;
 	unsigned int j;
 
@@ -20,19 +20,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	i = 0;
 	while (s1[i] != '\0')
 		i++;
-	prt = malloc(sizeof(char) * (i + n + 1));
+	strDup = malloc(sizeof(char) * (i + n + 1));
 	if (strDup == NULL)
 		return (NULL);
 	i = j = 0;
 	while (s1[i] != '\0')
 	{
-		prt[i] = s1[i];
+		strDup[i] = s1[i];
 		i++;
 	}
 	while (j < n && s2[j] != '\0')
 	{
-		prt[i] = s2[j];
+		strDup[i] = s2[j];
 		i++, j++;
 	}
-	prt[i] = '\0';
-	return (prt);
+	strDup[i] = '\0';
+	return (strDup);
+}
