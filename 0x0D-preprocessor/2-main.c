@@ -1,4 +1,3 @@
-#include <stdlib>
 #include <stdio.h>
 /**
  * main - prints the nmae of the file
