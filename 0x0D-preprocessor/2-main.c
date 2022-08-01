@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints the nmae of the file
- * return: void
+ * Return: void
  **/
 int main(void)
 {
