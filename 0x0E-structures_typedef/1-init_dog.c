@@ -7,6 +7,7 @@
  * @name: pointer to name 
  * @age: pointer to age
  * @owner: owner of the dog
+ * Description: Dogs struct
  **/
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
