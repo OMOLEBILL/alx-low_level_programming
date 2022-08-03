@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include "function_pointers.h"
 /**
- * print-name - prints a name
+ * print-name  - prints the name
  * @name: name to be printed
- * @f: function to print name
+ * @f: array to function to print name
  **/
 void print_name(char *name, void (*f)(char *))
 {
