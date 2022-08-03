@@ -5,6 +5,7 @@
  * @array: array of the search items
  * @size: size of the array
  * @cmp: function to compare
+ * Return: the 1st occurance of the elemnt
  **/
 int int_index(int *array, int size, int (*cmp)(int))
 {
