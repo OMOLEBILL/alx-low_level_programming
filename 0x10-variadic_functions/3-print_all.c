@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-
 /**
  * print_all - prints anything.
  * @format: a list of types 
@@ -46,5 +45,6 @@ void print_all(const char * const format, ...)
 			break;
 		} i++;
 	}
-	printf("\n"), va_end(args);
+	printf("\n");
+	va_end(args);
 }
