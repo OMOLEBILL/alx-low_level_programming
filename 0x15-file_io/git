@@ -1,0 +1,3 @@
+t commit -m "file ops"
+
+git push
