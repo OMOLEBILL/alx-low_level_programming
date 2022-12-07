@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """ module to find the perimeter of a grid """
 
-
-def islandPerimeter(grid):
+def island_perimeter(grid):
     m, n = len(grid), len(grid[0])
     land, nei = 0, 0
     for i in range(m):
@@ -11,6 +10,6 @@ def islandPerimeter(grid):
                 land += 1
                 if i < m - 1 and grid[i+1][j] == 1:
                     nei += 1
-                if j < n - 1 and grid[i][j+1] = =1:
+                if j < n - 1 and grid[i][j+1] == 1:
                     nei += 1
     return (land*4 - 2*nei)
