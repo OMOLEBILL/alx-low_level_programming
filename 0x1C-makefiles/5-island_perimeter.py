@@ -2,7 +2,15 @@
 """ module to find the perimeter of a grid """
 
 
-def island_perimeter(grid):
-    """ function that return te perimeter of grid"""
-    a = [i for x in grid for i in x if i == 1]
-    return ((2*(len(a))) + 2)
+def islandPerimeter(grid):
+    m, n = len(grid), len(grid[0])
+    land, nei = 0, 0
+    for i in range(m):
+        for j in range(n):
+            if grid[i][j] == 1:
+                land += 1
+                if i < m - 1 and grid[i+1][j] == 1:
+                    nei += 1
+                if j < n - 1 and grid[i][j+1] = =1:
+                    nei += 1
+    return (land*4 - 2*nei)
