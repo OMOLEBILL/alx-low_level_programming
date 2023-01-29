@@ -27,14 +27,12 @@ int binary_search(int *array, size_t size, int value)
 	size_t low, high, mid;
 	int flag = 0;
 
-	low = 0;
-	high = size - 1;
 	if (array == NULL)
 		return (-1);
-	while (low <= high)
+	for (low = 0, high = size - 1; low <= high;)
 	{
 		print_array(array, low, high);
-		mid = (low + high) / 2;
+		mid = low + (high - low) / 2;
 		if (array[mid] == value)
 		{
 			flag = 1;
@@ -43,7 +41,7 @@ int binary_search(int *array, size_t size, int value)
 		else if (array[mid] < value)
 			low = mid + 1;
 		else
-			high = mid;
+			high = mid - 1;
 	}
 	if (flag != 1)
 		return (-1);
